@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container" style="display: flex; align-items: center; margin-right: 5px;">
+                <img src="/logo.png.jpeg" alt="Logo" class="logo" id="logoBtn"
+                    style="border-radius: 50%; margin-right: 30px;">
+                <span class="logo-name">Nandini Pathak</span>
+                <div class="dropdown" id="dropdownMenu">
+
+                    <div class="dropdown-section">
+                        <h4>Name</h4>
+                        <p>Nandini Pathak</p>
+                    </div>
+                    <div class="dropdown-section">
+                        <h4>Contact</h4>
+                        <p>Email: nandini@example.com</p>
+                        <p>Phone: +91 1234567890</p>
+                    </div>
+                    <div class="dropdown-section">
+                        <h4>Educational Info</h4>
+                        <p>Bachelor's in Computer Science</p>
+                        <p>XYZ University</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="right">
+                <ul>
+                    <li class="nav-item"><a href="home.html">Home</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="services.html">Services</a></li>
+                    <li class="nav-item"><a href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section">
+            <section class="first">
+                <div class="leftsection">
+
+                    Hi, My Name is <span class="clr"> Nandini Pathak</span>.
+                    earlier study in rana pratap inter college this is my favourite place 
+                    
+                    <div> <span id="element"></span></div>
+
+                </div>
+                <div class="rightsection">
+                    <img class="image" height="443px" width="433px" src="/port.png" alt="">
+                </div>
+            </section>
+<hr>
+            <section class="second" id="about-section">
+                <h1>About Me</h1>
+                <div class="about-content">
+                    <p class="intro">In search of new ideas and creativity, I am a developer who transforms code into art.</p>
+                    <p>I have always believed in combining <span class="highlight">problem-solving</span> and <span class="highlight">creativity</span>.  
+                       Whether it's a Dynamic Website or an Interactive UI, I strive to add a unique touch to every project.  
+                    </p>
+                    <p>When I am not coding, I explore new design ideas or take inspiration from a Tech Meetup.  
+                    </p>
+                   
+                </div>
+            </section>
+            
+        </div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true,
+            showCursor: false
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
