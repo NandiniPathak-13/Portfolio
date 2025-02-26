@@ -28,3 +28,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", checkScroll);
 });
+
+
+function adjustDropdownSize() {
+    const dropdown = document.getElementById("dropdownMenu");
+    dropdown.style.height = "auto"; // Automatically adjust height
+}
+
+// Jab bhi koi naya element add ho, tab size adjust kare
+document.getElementById("dropdownMenu").addEventListener("DOMSubtreeModified", adjustDropdownSize);
+
+$(document).ready(function(){
+    $(".toggle-btn").click(function(){
+        $(this).next(".extra-content").slideToggle(300);
+        $(this).text($(this).text() === "View Subjects 📖" ? "Hide Subjects ❌" : "View Subjects 📖");
+    });
+});
+
