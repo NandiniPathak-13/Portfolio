@@ -14,6 +14,7 @@
 <body>
     <header>
         <nav class="navbar">
+
             <div class="logo-container" style="display: flex; align-items: center; margin-right: 5px;">
                 <img src="/logo.png.jpeg" alt="Logo" class="logo" id="logoBtn"
                     style="border-radius: 50%; margin-right: 30px;">
@@ -26,8 +27,8 @@
                     </div>
                     <div class="dropdown-section">
                         <h4>Contact</h4>
-                        <p>Email: nandini@example.com</p>
-                        <p>Phone: +91 1234567890</p>
+                        <p>Email: nandinipathak013@gmail.com</p>
+                        <p>Insta: _nandini__pathak_</p>
                     </div>
                     <div class="dropdown-section">
                         <h4>Educational Info</h4>
@@ -55,9 +56,9 @@
             <section class="first">
                 <div class="leftsection">
 
-                    Hi, My Name is <span class="clr"> Nandini Pathak</span>.
-                    earlier study in rana pratap inter college this is my favourite place 
-                    
+                    <p class="">Hi, My Name is <span class="clr"> Nandini Pathak</span>.
+                        earlier study in rana pratap inter college this is my favourite place </p>
+
                     <div> <span id="element"></span></div>
 
                 </div>
@@ -65,22 +66,101 @@
                     <img class="image" height="443px" width="433px" src="/port.png" alt="">
                 </div>
             </section>
-<hr>
+            <hr>
             <section class="second" id="about-section">
-                <h1>About Me</h1>
+              
                 <div class="about-content">
-                    <p class="intro">In search of new ideas and creativity, I am a developer who transforms code into art.</p>
-                    <p>I have always believed in combining <span class="highlight">problem-solving</span> and <span class="highlight">creativity</span>.  
-                       Whether it's a Dynamic Website or an Interactive UI, I strive to add a unique touch to every project.  
-                    </p>
-                    <p>When I am not coding, I explore new design ideas or take inspiration from a Tech Meetup.  
-                    </p>
-                   
+                    <div class="col1">
+                       
+                    </div>
+
+
+                    <div class="col2">
+                        <h1>About Me</h1>
+                        <p class="grey">In search of new ideas and creativity, I am a developer who transforms code
+                            into art.</p>
+                        <p class="grey">I have always believed in combining <span class="highlight">problem-solving</span> and <span
+                                class="highlight">creativity</span>.
+                            Whether it's a Dynamic Website or an Interactive UI, I strive to add a unique touch to every
+                            project.
+                            <p class="grey">When I am not coding, I explore new design ideas or take inspiration from a Tech Meetup.
+                            </p>
+                        </p>
+                        <div class="tabtitles">
+                            <p class="tab activetab" onclick="opentab('education')">Education</p>
+                            <p class="tab" onclick="opentab('skills')">Skills</p>
+                            <p class="tab" onclick="opentab('contact')" >Contact</p>
+                        </div>
+                        <div class="tab-content active-content" id="education">
+                            <ul>
+                                <li>
+                                    <span>Java</span><br>Core Java
+                                </li>
+                                <li>
+                                    <span>Advance Java</span><br>Spring Boot
+                                </li>
+                                <li>
+                                    <span>Java connectivity</span><br>JDBC
+                                </li>
+                                <li>
+                                    <span>Database</span><br> PostgreSql
+                                </li>
+                                <li>
+                                    <span>MySql</span><br> Sql
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="tab-content" id="skills">
+                            <ul>
+                                <li>
+                                    <span>Java</span><br>Core Java
+                                </li>
+                                <li>
+                                    <span>Advance Java</span><br>Spring Boot
+                                </li>
+                                <li>
+                                    <span>Java connectivity</span><br>JDBC
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+
+
+                        <div class="tab-content" id="contact">
+                            <ul>
+                                <li>
+                                    <span>Java</span><br>Core Java
+                                </li>
+                                <li>
+                                    <span>Advance Java</span><br>Spring Boot
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+
                 </div>
             </section>
-            
+
         </div>
     </main>
+
+    <footer>
+        <div class="foot">
+            <div class="first"></div>
+            <div class="second"></div>
+            <div class="third"></div>
+            <div class="fourth"></div>
+        </div>
+    </footer>
+
+
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
@@ -92,6 +172,15 @@
         });
     </script>
     <script src="script.js"></script>
+    <!-- <script>
+var tablinks = document.getElementsByClassName("tab")
+var tabcontents = document.getElementsByClassName("tab-content")
+function opentab(tabname){
+for{
+
+}
+}
+    </script> -->
 </body>
 
 </html>

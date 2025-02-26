@@ -2,7 +2,7 @@ body {
     background-color: #121212;
     font-family: 'Poppins', sans-serif;
     color: white;
-
+  
 }
 
 * {
@@ -15,7 +15,7 @@ body {
 }
 
 .clr {
-    color: #f0a500;
+    color: #ffffff;
     text-shadow: 2px 2px 8px rgba(111, 110, 110, 0.8);
 
 }
@@ -26,8 +26,6 @@ body {
     align-items: center;
     height: 40px;
 
-    /* position: fixed; */
-    /* width: 96.8%; */
     background-color: rgb(34, 34, 34);
 
     padding: 15px;
@@ -35,38 +33,74 @@ body {
     color: white;
     border-radius: 10px;
     margin: 5px;
+    
+
+}
+
+.navbar.fixed {
+       display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 96.7%;
+    background-color: rgb(34, 34, 34);
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); */
+}
+
+/* Hamburger button styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
 
 
-
-    /* top: 0;
-    left: 0; */
-    /* background: #1a1a1a; */
-    /* padding: 5px 5px; */
-    /* z-index: 1000; */
-
-
-
+.grey {
+    color: #d2d1d1;
 }
 
 .nav-item a {
     text-decoration: none;
-    color: white;
+    color: rgb(199, 197, 197);
     transition: color 0.3s ease;
     display: inline-block;
     transition: transform 0.2s ease-in-out, text-shadow 0.3s ease;
 }
 
 .nav-item a:hover {
-    color: #f0a500;
+    color: #ffffff;
+
     transform: scale(1.1);
-    text-shadow: 2px 2px 5px rgba(240, 165, 0, 0.7);
+    text-shadow: 2px 2px 5px #424242;
 }
 
 .logo-container {
     position: relative;
     display: flex;
     align-items: center;
+   
+    
+    transition: opacity 0.3s ease-in-out;
+}
 
+.navbar.fixed .logo-container {
+    display: none;
+}
+
+.navbar.fixed .hamburger {
+    display: flex;
 }
 
 .logo {
@@ -75,14 +109,7 @@ body {
     cursor: pointer;
 }
 
-.right ul li {
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
-}
 
-.right ul li:hover {
-    color: #f0a500;
-}
 
 
 .dropdown {
@@ -149,7 +176,8 @@ body {
 .first {
     display: flex;
     justify-content: space-around;
-    height: 90vh;
+    height: 85vh;
+
 
 }
 
@@ -169,18 +197,11 @@ body {
 }
 
 
-.second h1 {
 
-    margin-left: 10%;
-    padding: 40px 0;
-    margin-bottom: 15px;
-    font-size: 2.5em;
-    margin-bottom: 15px;
-}
 
 .second {
 
-    height: 90vh;
+
 
 
     color: #fff;
@@ -197,14 +218,6 @@ body {
 
 
 
-.about-content {
-    font-size: 1.2em;
-    line-height: 1.6;
-    text-align: left;
-    max-width: 80%;
-    margin: auto;
-}
-
 .intro {
     font-style: italic;
     font-size: 1.3em;
@@ -214,7 +227,7 @@ body {
 .highlight {
     font-size: 1.2em;
     font-weight: bold;
-    color: #ff5733;
+    color: #edc3c3;
     transition: text-shadow 0.3s ease-in-out;
 }
 
@@ -230,3 +243,72 @@ hr {
     background: rgb(247, 245, 245);
     box-shadow: 0px 4px 10px rgba(88, 87, 87, 0.5);
 }
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-content .col1{
+    flex-basis: 35%;
+}
+.about-content .col2{
+    flex-basis: 60%;
+}
+
+.about-content .col2 h1{
+    margin-top: 20px;
+font-size: 50px;
+font-weight: 500;
+}
+
+.tabtitles{
+display: flex;
+margin: 20px 0 40px;
+}
+
+.tabtitles .tab{
+  cursor: pointer;
+  margin-right: 50px;
+  font-weight: 500;
+  font-size: 18px;
+position: relative;
+    }
+
+
+    .tab::after{
+      content: '';
+      width: 0;
+      height: 3px;
+      background: rgba(88, 87, 87, 0.5) ;
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      transition: 0.5s;
+          }
+
+          .tab.activetab::after{
+            width: 50%;
+
+          }
+
+.tab-content ul li{
+list-style: none;
+margin: 10px 0;
+}
+.tab-content ul li span{
+    color: #929090;
+    font-size: 14px;
+}
+.tab-content{
+    display: none;
+}
+
+.active-content{
+    display: block;
+}
+
+
+
+
+
